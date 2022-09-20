@@ -1,7 +1,9 @@
 <?php
-    require_once "App/Objects/teacher.php";
-?>
+spl_autoload_register();
 
+use App\Objects\Teacher;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 

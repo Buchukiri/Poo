@@ -1,5 +1,8 @@
 <?php
-    require_once "App/Objects/student.php";
+spl_autoload_register();
+
+use App\Objects\Student;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -145,6 +148,12 @@
                 <?php
                     echo $samir->introduceMySelf()."<br>";
                     echo $sophie->introduceMySelf()."<br>";
+
+                    Student::setIntroduction("Yo, moi c'est ##firstname## ##lastname##, j'ai ##age## ans et je vais à ##school## et je suis en ##grade##.");
+
+                    echo $samir->introduceMySelf()."<br>";
+
+
                 ?>
             </div>
         </section>
